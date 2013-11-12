@@ -12,10 +12,12 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Georgia, Garamond, Times, Serif;
+	color:#2f2e46;
+} 
+h1, h2, h3, h4, h5, p{
+	margin-top: 0;
 }
-p{
-	margin-top:0;
-}
+
 .contain {
 	width: 940px;
 	margin: 0 auto;
@@ -43,15 +45,14 @@ p{
 	margin: 0px auto;
 	
 }
-#body-header h1 {
-	margin: 0;
-}
+
 
 #primary-nav {
 	border-top: solid 1px #cfcfcf;
 	border-bottom: solid 1px #cfcfcf;
 	color: #cfcfcf;
 	text-align: center;
+	
 		
 }
 
@@ -68,7 +69,10 @@ p{
 
 #primary-nav a:link:last-of-type{
 	margin-right:0
+}
 
+#content-wrapper{
+	margin-top:40px; 
 }
 #primary-nav a:hover {
 	border-top:solid 3px #2f2e46;
@@ -80,46 +84,30 @@ p{
 	width:700px;
 	margin-right:20px;
 	float:left;
+}	
+#content h2{
+	margin-bottom:27px;
 
-	
+}
+#content h3{
+	margin-bottom:27px;	
 	}
 
 #sidebar{
 	width: 220px;
 	float:right;
-	font
-}
-
-#sidebar a{
-	display:block;
-	font-family:georgia;
-	font-style:italic;
-	font-size:87.5%;
-	color:#cfcfcf;
-	text-decoration: none;
-	margin-bottom: 18px;
-	position: relative;
-
-}
-#sidebar a:hover:before {
-	content:"\00BB";
-	margin-right: 5px;
-	position: absolute;
-	left: -13px;
-	top:-1px;
 }
 
 #side form{
-	font-family: serif;
+	font-family:'junction_regularregular';
 	font-size: 18px;
-
-
+	margin-bottom:40px;
 }
-
 
 .columned p {
 	/*webkit vender prefix*/
 	text-align: justify;
+	padding-right: 40px;
 
 	-webkit-column-count:2;
 	-moz column-count:2;
@@ -161,21 +149,61 @@ p{
 	opacity: .17;
 }
 
-#body-footer a{
+.secondary-nav a{
 	display:block;
 	font-family:georgia;
 	font-style:italic;
 	font-size:87.5%;
+	line-height:1;
 	color:#4c4c4c;
 	text-decoration: none;
 	margin-bottom: 18px;
 	position: relative;
 }
 
-#body-footer a:hover:before {
+.secondary-nav a:hover:before {
 	content:"\00BB";
 	margin-right: 5px;
 	position: absolute;
 	left: -13px;
 	top:-1px;
 }
+
+#sidebar p:first-of-type{
+	border-bottom:solid 1px #2f2e46;
+	color: #2f2e46;
+}
+
+#sidebar .secondary-nav a{
+	font-size: 100%;
+	color: rgb(170, 169, 168);
+}
+
+
+#search{
+	margin-bottom:40px;
+}
+
+#search input #search button{
+	display:inline;
+	border:1px solid #d8e3e8;
+	background: white;
+	height:40px;
+	width: 155px;
+}
+
+#search button{
+	background: white;
+	font-style: 'junction' #90989b;
+	border:1px solid #d8e3e8;
+}
+
+#seach input [type="text"]
+{
+	width:155px;
+	padding:2;border-color:#d8e3e8;
+}
+
+
+
+
