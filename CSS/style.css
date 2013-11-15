@@ -1,3 +1,8 @@
+/*normalizer */
+
+ul li {list-style-type:none;
+}
+
 @font-face {
     font-family: 'junction_regularregular';
     src: url('../fonts/Junction-webfont.eot');
@@ -96,6 +101,7 @@ h1, h2, h3, h4, h5, p{
 #sidebar{
 	width: 220px;
 	float:right;
+	margin:0 auto;
 }
 
 #side form{
@@ -182,28 +188,49 @@ h1, h2, h3, h4, h5, p{
 
 #search{
 	margin-bottom:40px;
+	font-family:'junction_regularregular';
 }
 
-#search input #search button{
-	display:inline;
-	border:1px solid #d8e3e8;
-	background: white;
-	height:40px;
-	width: 155px;
+#search input, #search button{
+	height: 28px;
+	border: solid 1px #d8e3e8;
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
 }
 
 #search button{
 	background: white;
-	font-style: 'junction' #90989b;
-	border:1px solid #d8e3e8;
+	font: normal 11px/28px 'junction_regularregular';
+	text-transform:uppercase;
+	width:57px;
+	text-align:center;
+	float right:
+
 }
 
-#seach input [type="text"]
+#seach input 
 {
-	width:155px;
-	padding:2;border-color:#d8e3e8;
+	width:154px;
+	float:left;
+	text-indent:3px;
 }
 
 
 
+#type{
+	height:40px;
+	width:150px;
+	outline:none;
+}
 
+/*THIS IS THE START OF THE LIST STYLING*/
+
+ul li {
+	float:right;
+}
+}
