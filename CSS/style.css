@@ -1,6 +1,6 @@
 /*normalizer */
 
-ul li {list-style-type:none;
+ol li {list-style-type:none;
 }
 
 @font-face {
@@ -220,8 +220,6 @@ h1, h2, h3, h4, h5, p{
 	text-indent:3px;
 }
 
-
-
 #type{
 	height:40px;
 	width:150px;
@@ -230,7 +228,21 @@ h1, h2, h3, h4, h5, p{
 
 /*THIS IS THE START OF THE LIST STYLING*/
 
-ul li {
-	float:right;
+#list{
+	font-size:14px;
+	font-color:black;
+	text-align: center;
+	font-family:helvetica;
 }
+
+#list li{
+	height:220px;
+	width:220px;
 }
+
+/*#list h2{
+	margin-bottom: none;
+	margin-top: 80px;
+}
+*/
+
