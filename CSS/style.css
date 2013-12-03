@@ -1,8 +1,3 @@
-/*normalizer */
-
-ol li {list-style-type:none;
-}
-
 @font-face {
     font-family: 'junction_regularregular';
     src: url('../fonts/Junction-webfont.eot');
@@ -22,6 +17,9 @@ body {
 h1, h2, h3, h4, h5, p{
 	margin-top: 0;
 }
+a{
+	text-decoration: none;
+}
 
 .contain {
 	width: 940px;
@@ -34,7 +32,8 @@ h1, h2, h3, h4, h5, p{
 
 /*clear fixes*/
 #content-wrapper:after,
-#body-footer .contain:after{
+#body-footer .contain:after
+#product-list:after{
 	content:"";
 	display: table;
 	clear:both;
@@ -155,6 +154,7 @@ h1, h2, h3, h4, h5, p{
 	opacity: .17;
 }
 
+
 .secondary-nav a{
 	display:block;
 	font-family:georgia;
@@ -226,19 +226,77 @@ h1, h2, h3, h4, h5, p{
 	outline:none;
 }
 
-/*THIS IS THE START OF THE LIST STYLING*/
+/*PRODUCT LIST*/
 
-#list{
-	font-size:14px;
-	font-color:black;
-	text-align: center;
-	font-family:helvetica;
+#product-list{
+	margin:0;
+	padding:0;
+	list-style:none;
+
+}
+#product-list li{
+	float:left;
+	width: 220px;
+	height:220px;
+	margin: 0 20px 20px 0;
+	background-color:rgba(0,0,0,.4); 
+	position:relative;
 }
 
+#product-list li:nth-of-type(3n){
+	margin-right:0;
+}
+
+#product-list h2,
+#product-list p {
+	font-size:100%;
+	font-family: 'junction_regularregular';
+	color:#f2f2f2;
+	width:100%;
+	text-align: center;
+	position: absolute;
+	margin
+}
+
+#product-list h2{
+	font-size: 100%;
+	top:11px;
+}
+
+#product-list p{
+	font-size:85.6%;
+	bottom:10px;
+}
+
+#product-list span{
+	position:absolute;
+	height:25px;
+	width:95px;
+	top:140px;
+	bottom:50px;
+	left:50%;
+	background-color: #ffffff;
+	font-family: 'junction_regularregular';
+	color:#565656;
+	text-transform: uppercase;	
+	margin:auto;
+	text-align: center;
+}
+
+
+
+/*
+	font-size:14px;
+	font-color:f4f4f4;
+	text-align: center;
+	font-family:helvetica;*/
+}
+/*
 #list li{
 	height:220px;
 	width:220px;
 }
+*/
 
 /*#list h2{
 	margin-bottom: none;
