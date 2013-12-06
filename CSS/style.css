@@ -241,8 +241,24 @@ a{
 	margin: 0 20px 20px 0;
 	background-color:rgba(0,0,0,.4); 
 	position:relative;
-}
+	background-image: linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(68,68,68) 5%, rgb(51,51,51) 100%);
 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.05, rgb(68,68,68)),
+        color-stop(1, rgb(51,51,51))
+    );
+    color: #f0f0f0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+/*makes list stack three and three*/
 #product-list li:nth-of-type(3n){
 	margin-right:0;
 }
@@ -274,13 +290,17 @@ a{
 	width:95px;
 	top:140px;
 	bottom:50px;
-	left:50%;
+	left:30%;
 	background-color: #ffffff;
 	font-family: 'junction_regularregular';
 	color:#565656;
 	text-transform: uppercase;	
 	margin:auto;
-	text-align: center;
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,.2);
+	-moz-box-sizing:2px 2px 5px 1px rgba(0,0,0,.2);
+	-o-box-sizing:2px 2px 5px 1px rgba(0,0,0,.2);
+	box-sizing:2px 2px 5px 1px rgba(0,0,0,.2);
+	box-shadow:2px 2px 5px 1px rgba(0,0,0,.2);
 }
 
 
