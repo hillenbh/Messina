@@ -35,7 +35,7 @@ a{
 #body-footer .contain:after,
 #product-list:after, 
 #body-footer:after,
-#quickview {
+#quickview:after {
 
 	content:"";
 	display: table;
@@ -79,7 +79,7 @@ a{
 }
 
 #content-wrapper{
-	margin-top:40px; 
+	margin-top:30px; 
 }
 #primary-nav a:hover {
 	border-top:solid 3px #2f2e46;
@@ -302,18 +302,19 @@ li:hover:after {
           background-color: rgba (0,0,0,.36);
         pointer-events: none;
 }
-
+/**/
 #quickview{
-    position:absolute; left: 241px; top:30px;
+    position:absolute; left: 231px; top:5px;
     z-index: 3;
     background: #ffffff;
     height:455px;
     width: 445px;
-	font-family:'junction_regularregular';
+	border-radius: 10px;
 	border-top:1px solid #dbdbdb;
 	border-left:1px solid #dbdbdb;
 	border-right:1px solid #dbdbdb;
 	border-bottom:1px solid #dbdbdb;
+	border-radius:10px
 	-webkit-box-shadow: 2px 2px 2px 5px rgba(0,0,028); 
 	-moz-box-shadow: 2px 2px 2px 5px rgba(0,0,028); 
 	-o-box-box-shadow: 2px 2px 2px 5px rgba(0,0,028);
@@ -321,10 +322,42 @@ li:hover:after {
 	list-style:none;
 }
 
-.price, .add-to-cart{
-	float:right;
-	position:fixed; right:20px; bottom:20px;
-	font: normal 11px/28px 'junction_regularregular';
+#quickview h1{
+	margin-top: 240px;
+	font-size: 110%;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	font-family:'junction_regularregular';
+}
+
+#quickview p{
+	font-size:16px;
+	margin-left: 10px;
+	font-style: georgia;
+}
+
+#quickview img{
+	position:absolute; top:10px; left:10px;
+}
+
+#quickview ul{
+ 	list-style:none;
+ 	position:absolute; left:-30px; bottom:10px;
+ 	font-style: georgia;
+}
+
+.price{
+	position:absolute; right:55px; bottom:55px;
+	font-size: 18px
+}
+
+#quickview form{
+	font-family:'junction_regularregular';
+	font-size: 18px;
+	margin-bottom:40px;
+
+.add {
+	position:absolute; right: 20px; bottom:15px;
 }
 
 /*select all elements that are footer*/
